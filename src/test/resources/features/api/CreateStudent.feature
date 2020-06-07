@@ -19,7 +19,7 @@ Feature: Create student
       | Lesly      | SDET      | leviathanbcqonline@email.com | 1111     | student-team-member | VA              | 15           | Online_Hackers |
     And user verifies that response status code is 201
 
-  @create_student_3 @ui
+  @create_student_3 @ui @db
   Scenario: 3. Create student over API and ensure that student info is correct on the UI
     Given authorization token is provided for "teacher"
     And user accepts content type as "application/json"
